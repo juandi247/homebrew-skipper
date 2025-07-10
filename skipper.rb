@@ -5,21 +5,21 @@
 class Skipper < Formula
   desc "skipper is a tunnel and a reverse proxy that enables you to share your localhost free using just a subdomain from the skipper.lat domain"
   homepage "https://skipper.lat"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juandi247/Skipper/releases/download/v1.0.0/skipper_1.0.0_darwin_amd64.tar.gz"
-      sha256 "2f94c766459e8e4978e3a9f4a9cb6862107bfb3032cc7fda637b3b5be10039f5"
+      url "https://github.com/juandi247/Skipper/releases/download/v1.0.1/skipper_1.0.1_darwin_amd64.tar.gz"
+      sha256 "edb9543538ead10a6e55bd5503cf7adcc4ea42c8fd2d283895aee1fc423bbf68"
 
       def install
         bin.install "skipper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juandi247/Skipper/releases/download/v1.0.0/skipper_1.0.0_darwin_arm64.tar.gz"
-      sha256 "21416a91881cba93fb495ae206bc26be2f79dce8fba5f334e23fe2a9e086241f"
+      url "https://github.com/juandi247/Skipper/releases/download/v1.0.1/skipper_1.0.1_darwin_arm64.tar.gz"
+      sha256 "84ca6e638646e2120af96c5e3a156816bd99dec2a3786c175a760dfdf25faa07"
 
       def install
         bin.install "skipper"
@@ -29,15 +29,15 @@ class Skipper < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/juandi247/Skipper/releases/download/v1.0.0/skipper_1.0.0_linux_amd64.tar.gz"
-      sha256 "384aabd5bb3124b8713781ecf30f5a4591fcb0a5fb981bf700e0fdf157096050"
+      url "https://github.com/juandi247/Skipper/releases/download/v1.0.1/skipper_1.0.1_linux_amd64.tar.gz"
+      sha256 "0b1ff6861d1f6932aa183cc3688009f649ae45e1bda2544f21c66119f526b4a0"
       def install
         bin.install "skipper"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/juandi247/Skipper/releases/download/v1.0.0/skipper_1.0.0_linux_arm64.tar.gz"
-      sha256 "ea5190a550b5317c774061e08ba564e18b2839aaa1aa25c2e178cad4476daa14"
+      url "https://github.com/juandi247/Skipper/releases/download/v1.0.1/skipper_1.0.1_linux_arm64.tar.gz"
+      sha256 "4e6cfd3192df2ddf479f3c7d9259a2cb1476f4709e5e6ec57944e3d5edf37ca6"
       def install
         bin.install "skipper"
       end
